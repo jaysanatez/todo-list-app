@@ -4,7 +4,6 @@
 //
 //  Created by Jacob Sanchez on 12/21/14.
 //  Copyright (c) 2014 JSanch. All rights reserved.
-//
 
 import UIKit
 import CoreData
