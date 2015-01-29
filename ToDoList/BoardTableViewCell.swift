@@ -21,6 +21,8 @@ class BoardTableViewCell: UITableViewCell
     @IBOutlet var priority_image:UIImageView!
     @IBOutlet var status_color:UIView!
     @IBOutlet var day_label:UILabel!
+    @IBOutlet var outer_view:UIView!
+    @IBOutlet var inner_view:UIView!
     
     // swiping is fun
     @IBOutlet var content_view_right_constraint:NSLayoutConstraint!
@@ -68,6 +70,12 @@ class BoardTableViewCell: UITableViewCell
             button.titleLabel?.textAlignment = NSTextAlignment.Center
             button.titleLabel?.font = UIFont.systemFontOfSize(15)
         }
+        
+        outer_view.layer.cornerRadius = 18
+        outer_view.layer.masksToBounds = true
+        
+        inner_view.layer.cornerRadius = 17
+        inner_view.layer.masksToBounds = true
         
         comp_button.backgroundColor = UIColor(red:0.5, green:1.0, blue:0.5, alpha:1.0)
         wnc_button.backgroundColor = UIColor(red:1.0, green:0.5, blue:0.5, alpha:1.0)
@@ -118,7 +126,11 @@ class BoardTableViewCell: UITableViewCell
         else
         {
             priority_image.image = nil
+            
         }
+        
+        outer_view.hidden = item.isCompleted()
+        inner_view.hidden = item.isCompleted()
 
         day_label.text = item.is_task ? ((item.day == Day.None) ? "Task - No Specific Due Date" : "Task Due \(item.day.description)") : ((item.day == Day.None) ? "Event - No Specific Date" : "Event On \(item.day.description)")
     }
