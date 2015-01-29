@@ -85,8 +85,8 @@ class BoardsDetailView: UIView, UITableViewDataSource, UITableViewDelegate
     
     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath)
     {
-        var cell:BoardDetailTableViewCell = tableView.cellForRowAtIndexPath(indexPath) as BoardDetailTableViewCell
-        cell.setUnselected()
+        var cell:BoardDetailTableViewCell? = tableView.cellForRowAtIndexPath(indexPath) as BoardDetailTableViewCell?
+        cell?.setUnselected()
     }
     
     func getSelectedBoard() -> Board?

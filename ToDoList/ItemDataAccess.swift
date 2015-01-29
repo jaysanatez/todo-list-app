@@ -49,12 +49,6 @@ class ItemDataAccess:NSObject
         var sorted_items:Array<Item> = items.sorted({
             var i1:Item = $0
             var i2:Item = $1
-            return !i1.hasDayLessThanItem(i2)
-        })
-        
-        sorted_items = sorted_items.sorted({
-            var i1:Item = $0
-            var i2:Item = $1
             return !i1.hasPriorityLessThanItem(i2)
         })
         

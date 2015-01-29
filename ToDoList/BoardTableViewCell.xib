@@ -89,7 +89,7 @@
                                         </constraints>
                                     </view>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Yg-At-Hvi">
-                                        <rect key="frame" x="277" y="8" width="30" height="30"/>
+                                        <rect key="frame" x="277" y="24" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="E75-b8-w5q"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="gOn-Pn-Pgl"/>
@@ -126,9 +126,9 @@
                                     <constraint firstAttribute="bottom" secondItem="fmj-l2-x4B" secondAttribute="bottom" id="8xR-ZU-ycJ"/>
                                     <constraint firstItem="brQ-1V-MNi" firstAttribute="leading" secondItem="Ygh-Bf-TG5" secondAttribute="leading" id="94H-IN-j2Z"/>
                                     <constraint firstItem="yQv-jN-NKi" firstAttribute="leading" secondItem="fmj-l2-x4B" secondAttribute="trailing" id="GYy-xi-YFT"/>
+                                    <constraint firstAttribute="centerY" secondItem="1Yg-At-Hvi" secondAttribute="centerY" id="ICI-i5-kzs"/>
                                     <constraint firstAttribute="trailing" secondItem="1Yg-At-Hvi" secondAttribute="trailing" constant="13" id="JEO-te-QQp"/>
                                     <constraint firstItem="yQv-jN-NKi" firstAttribute="top" secondItem="Ygh-Bf-TG5" secondAttribute="top" id="Kqt-c6-lLp"/>
-                                    <constraint firstItem="1Yg-At-Hvi" firstAttribute="top" secondItem="Ygh-Bf-TG5" secondAttribute="top" constant="8" id="LBl-I7-149"/>
                                     <constraint firstItem="fIg-vo-0Mu" firstAttribute="top" secondItem="Ygh-Bf-TG5" secondAttribute="top" constant="8" id="Mev-WF-gdF"/>
                                     <constraint firstAttribute="trailing" secondItem="brQ-1V-MNi" secondAttribute="trailing" id="QVj-eB-bH9"/>
                                     <constraint firstItem="aXQ-Wi-e8C" firstAttribute="top" secondItem="fIg-vo-0Mu" secondAttribute="bottom" constant="1" id="Uv7-6Z-pYK"/>

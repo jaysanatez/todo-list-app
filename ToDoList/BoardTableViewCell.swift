@@ -120,7 +120,7 @@ class BoardTableViewCell: UITableViewCell
             priority_image.image = nil
         }
 
-        day_label.text = item.is_task ? ((item.day == Day.None) ? "Task - No Specific Due Date" : "Task Due \(item.day.description)") : ((item.day == Day.None) ? "Event" : "Event On \(item.day.description)")
+        day_label.text = item.is_task ? ((item.day == Day.None) ? "Task - No Specific Due Date" : "Task Due \(item.day.description)") : ((item.day == Day.None) ? "Event - No Specific Date" : "Event On \(item.day.description)")
     }
     
     /* 
